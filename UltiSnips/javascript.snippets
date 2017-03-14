@@ -1,0 +1,34 @@
+snippet ife "if else"
+if ($1){
+	$2
+} else {
+	$3
+}
+endsnippet
+
+
+snippet timeout "setTimeout function"
+setTimeout(function() {
+	${VISUAL}$0
+}, ${1:10});
+endsnippet
+
+snippet req "cmd require"
+require('$1')$0
+endsnippet
+
+snippet exp "cmd export"
+module.exports = $1;
+endsnippet
+
+snippet func "function"
+function $1($2){
+	$0
+}
+endsnippet
+
+snippet 200 "ajax data code 200"
+if (parseInt(data.code, 10) === 200) {
+	$0
+}
+endsnippet
